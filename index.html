@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Acheivers-health-care</title>
+	<link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<style>
 		
@@ -162,16 +163,43 @@
    	justify-content: center;
 
    }
-   .form
-   {
-   	display: grid;
+   .form{
+	display: grid;
    	grid-template-columns: repeat(2, 1fr);
    }
-   .input{
-    width: 69%;
-    height: 40px;
-  
-   }
+   input,select,textarea{
+			border: 1px solid #ccc;
+			background: #e7e9eb;
+		}
+		.reg{
+		position: absolute;
+		top:2370px;
+		margin: 3px;
+		}
+		.mail{
+		position: absolute;
+		top: 2380px;
+		margin: -9px;
+		}
+		.dep{
+			position: absolute;
+    top: 2780px;
+    right: 1000px;
+    margin: 10px;
+		}
+		.gen{
+			position: absolute;
+    top: 2810px;
+    right: 1000px;
+		}
+
+		.submit{
+			width: 250px;
+			height: 30px;
+			background: greenyellow;
+			color: white;
+			border: 1px solid yellowgreen;
+		}
     
    
    .app{
@@ -253,12 +281,12 @@ section {
 		
 		</section>
 		<section>
-			<img src="./././image/slider3.jpg" alt="img" class="slid">
+			<img src="./image/slider3.jpg" alt="img" class="slid">
 			<h1 class="first">Your Health Benifits</h1>
 			<button class="click" type="button">Read Stories</button>
       </section>
       <section>
-      	<img src="./././image/about-bg.jpg" class="doc" alt="doctor" width="1263" height="444">
+      	<img src="./image/about-bg.jpg" class="doc" alt="doctor" width="1263" height="444">
       	<h2 class="welcome"><b>Welcome to Your Health</b><br>
       	<b> Center</b></h2>
       	<p class="aenean">Aenean lutus lobortis tellus,vel ornare enim molestie condimentum. Curabitur<br>
@@ -266,7 +294,7 @@ section {
       		<p class="sed">Sed a dignissim lacus.Quisque fermentum est non orci commodo,a lutus<br> 
       			urna mattis. Ut placert,diam a tempus vehicula.</p>
 
-      			<img class="author" src="./././image/author-image.jpg" class="pic" alt="author" width="100" height="150">
+      			<img class="author" src="./image/author-image.jpg" class="pic" alt="author" width="100" height="150">
       			<h2 class="dr"><b>Dr. Neil Jackson</b></h2>
       	<p class="general">General Principal</p>
       </section>
@@ -274,7 +302,7 @@ section {
       	<h2>Our Doctor</h2>
       	<span class="do">
       	<div>
-      		<img src="./././image/team-image1.jpg" class="our">
+      		<img src="./image/team-image1.jpg" class="our">
       		<h3>Nate Baston</h3>
       		<p>General principle</p>
       		<ul>
@@ -284,9 +312,9 @@ section {
       		</ul>
       	</div>
       	<div>
-      		<img src="./././image/news-image2.jpg" class="our">
+      		<img src="./image/news-image2.jpg" class="our">
       		<h3>Jason Stewart</h3>
-      		<p>pregancy</p>
+      		<p>Genyocologiest</p>
       		<ul>
       			<hr>
       			<li><i class="fa-solid fa-phone"></i>010-070-0170</li>
@@ -294,7 +322,7 @@ section {
       		</ul>
       	</div>
       	<div>
-      		<img src="./././image/team-image3.jpg" class="our">
+      		<img src="./image/team-image3.jpg" class="our">
       		<h3>Miasha Nakahara</h3>
       		<p>cardiology</p>
       		<ul>
@@ -310,7 +338,7 @@ section {
         <h2>Latest News</h2>
         <span class="about">
         <div>
-          <img src="./././image/news-image1.jpg" class="news">
+          <img src="./image/news-image1.jpg" class="news">
           <p>March 08,2018</p>
           <h3 class="logy">About Amazing <br>Technology</h3>
           <p>Maecenas risus neque,placerat volutpat<br>
@@ -318,14 +346,14 @@ section {
           
         </div>
         <div>
-          <img src="./././image/news-image2.jpg" class="news">
+          <img src="./image/news-image2.jpg" class="news">
           <p>February 20,2018</p>
           <h3 class="intro">Introducing a new healing process</h3>
           <p>Fusce vel sem finibus,rhoncus massa non,<br> 
           aliquam velit.Nam et est ligula.</p>
         </div>
         <div>
-          <img src="./././image/news-image3.jpg" class="news">
+          <img src="./image/news-image3.jpg" class="news">
           <p>January 27,2018</p>
           <h3>Review Annual Medical Research</h3>
           <p>Vivamus non nulla semper diam cursus<br>
@@ -336,28 +364,29 @@ section {
       </section>
       <section class="form">
       	<div>
-      		<img src="./././image/appointment-image.jpg" class="app">
+      		<img src="./image/appointment-image.jpg" class="app">
       	</div>
-      	<form class="input">
-      		<h2>Make an appoinment</h2>
-      		<label>Name</label>
-      		<input type="text" name="fname" placeholder="Full Name" class="name">
-      		<label>Email</label>
-      		<input type="text" name="mail" placeholder="Your Email">
-      		<label>Select Date</label>
-      		<input type="date" name="date" placeholder="mm/dd/yyyy">
-      		<label>Select Department</label>
-      		<select>
-      			<option value="General health">General health</option>
-      			<option value="General health">Pregnancy</option>
-      			<option value="General health">cardiology</option>
-      		</select>
-      		<label>Phone Number</label><br>
-      		<input type="Number" name="phn num" placeholder="Phone">
-      		<label>Additional Message</label>
-      		<textarea  name="subject" placeholder="Message.." style="height:200px"></textarea>
-      		<button type="Submit" form="nameform" value="Submit Button" class="submit">Submit Button</button>
-      	</form>
+      	<form>
+			<label class="reg">Name</label><br>
+			<input type="text" name="name" placeholder="Full name">
+			<label class="mail">Email</label>
+			<input type="text" name="email" placeholder="email"><br>
+			<label class="date">Select date</label><br>
+			<input type="date" name="date" ><br>
+			<label class="dep">Select department</label>
+			<select name="Select department" class="gen">
+				<option value="General health" >General health</option>
+				<option value="Genyocologiest">Genyocologiest</option>
+				<option value="Cardio">Cardio</option>
+			</select><br>
+			<label class="phn">Phone number</label><br>
+			<input type="number" name="phnum" placeholder="Phone"><br>
+			<label class="msg">Additional message</label><br>
+			<textarea  name="subject" placeholder="Message.." style="height:162px" "width: 250px;" ></textarea><br>
+					  <button type="Submit" form="nameform" value="Submit Button" class="submit">Submit Button</button>
+		
+			
+		</form>
       </section>
       <section>
       	<div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8114066703374!2d77.60786407397799!3d12.919839716013175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1548e290313f%3A0xfaf25026cfa3458d!2sAchieversIT%20Bangalore!5e0!3m2!1sen!2sin!4v1689930021129!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
@@ -374,12 +403,12 @@ section {
       	<div>
       		<h2>Latest News</h2>
       		<figure>
-      			<img src="./././image/news-image.jpg" class="tech">
+      			<img src="./image/news-image.jpg" class="tech">
       			<figcaption>Amazing Technology</figcaption>
       			<p>july 10,2023</p>
       		</figure>
       		<figure>
-      			<img src="./././image/news-image.jpg" class="heal">
+      			<img src="./image/news-image.jpg" class="heal">
       			<figcaption>New Healing Process</figcaption>
       			<p>july 25,2023</p>
       		</figure>
